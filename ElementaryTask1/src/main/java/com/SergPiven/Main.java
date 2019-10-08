@@ -1,4 +1,6 @@
-    import java.text.ParseException;
+package com.SergPiven;
+
+import java.text.ParseException;
     import java.util.Scanner;
 
 public class Main {

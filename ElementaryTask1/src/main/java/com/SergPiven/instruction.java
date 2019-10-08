@@ -1,4 +1,6 @@
-    public class instruction {
+package com.SergPiven;
+
+public class instruction {
 
         static void ContentsOfInstruction()
         {

@@ -1,3 +1,5 @@
+package com.SergPiven;
+
 import java.util.Scanner;
 
 public class Initiliazition {

@@ -1,3 +1,5 @@
+package com.SergPiven;
+
 import javax.swing.*;
 import java.awt.*;
 
