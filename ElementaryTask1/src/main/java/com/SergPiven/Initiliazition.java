@@ -15,18 +15,23 @@ public class Initiliazition {
             if (Double.parseDouble(args[0]) > 0 && Double.parseDouble(args[1]) > 0) {
                 System.out.println(board.Board(Double.parseDouble(args[0]), Double.parseDouble(args[1])));
             }
-        }
-        else {
+        } else {
             instruction.ContentsOfInstruction();
-            System.out.println("Введите ширину шахматной доски");
-            Scanner scanner = new Scanner(System.in);
-            value1 = scanner.nextInt();
-            System.out.println("Введите длину шахматной доски");
-            value2 = scanner.nextInt();
 
-            if (value1 > 0 && value2 > 0) {
-                System.out.println(board.Board(value1, value2));
+            try {
+                System.out.println("Введите ширину шахматной доски");
+                Scanner scanner = new Scanner(System.in);
+                value1 = scanner.nextInt();
+                System.out.println("Введите длину шахматной доски");
+                value2 = scanner.nextInt();
+
+            } catch (NumberFormatException exception) {
+                System.err.println("Ошибка!!\nВведите правильный тип данных (double)");
+            }
+                if (value1 > 0 && value2 > 0) {
+                    System.out.println(board.Board(value1, value2));
+                }
             }
         }
     }
-}
+

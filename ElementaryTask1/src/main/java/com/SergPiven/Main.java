@@ -1,10 +1,10 @@
 package com.SergPiven;
 
 import java.text.ParseException;
-    import java.util.Scanner;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Initiliazition.run();
+        Initiliazition.run(args 5,5);
     }
 }
